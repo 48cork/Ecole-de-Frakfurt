@@ -64,10 +64,6 @@
             gap: 10px;
         }
         
-        .material-card h3 i {
-            font-size: 1.2em;
-        }
-        
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -126,7 +122,6 @@
             font-size: 0.9em;
         }
         
-        /* Ícones usando emoji */
         .icon {
             font-size: 1.2em;
             margin-right: 8px;
@@ -160,63 +155,55 @@
         <p class="subtitle">Materiais de Introdução à Sociologia</p>
         
         <div class="note">
-            📱 <strong>Otimizado para celular:</strong> Todos os materiais podem ser visualizados diretamente no navegador do seu smartphone.
+            📱 <strong>Otimizado para celular:</strong> Todos os PDFs abrem direto no navegador do smartphone.
         </div>
         
-        <!-- Material 1 -->
         <div class="material-card">
-            <h3><span class="icon">📄</span> 1. Introdução à Teoria Crítica</h3>
-            <p>Contexto histórico e conceitos fundamentais da Escola de Frankfurt.</p>
+            <h3><span class="icon">📄</span> 1. Introdução à Escola de Frankfurt</h3>
+            <p>Contexto histórico, autores e conceitos fundamentais.</p>
             <div>
-                <a href="introducao.pdf" class="btn" target="_blank">Abrir PDF</a>
-                <a href="introducao.pdf" class="btn btn-download" download>Download</a>
+                <a href="escola_frankfurt.pdf" class="btn" target="_blank">Abrir PDF</a>
+                <a href="escola_frankfurt.pdf" class="btn btn-download" download>Download</a>
             </div>
-            <p class="format-info">Tamanho: ~2MB • Formato: PDF</p>
+            <p class="format-info">Formato: PDF • Ideal para celular</p>
         </div>
         
-        <!-- Material 2 -->
         <div class="material-card">
-            <h3><span class="icon">📄</span> 2. Principais Autores e Conceitos</h3>
-            <p>Adorno, Horkheimer, Marcuse, Habermas e suas contribuições.</p>
+            <h3><span class="icon">📄</span> 2. Autoritarismo e Teoria Crítica</h3>
+            <p>Análise do autoritarismo na perspectiva da Escola de Frankfurt.</p>
             <div>
-                <a href="teoria-critica.pdf" class="btn" target="_blank">Abrir PDF</a>
-                <a href="teoria-critica.pdf" class="btn btn-download" download>Download</a>
+                <a href="autoritarismo_escola_frankfurt.pdf" class="btn" target="_blank">Abrir PDF</a>
+                <a href="autoritarismo_escola_frankfurt.pdf" class="btn btn-download" download>Download</a>
             </div>
-            <p class="format-info">Tamanho: ~3MB • Formato: PDF</p>
+            <p class="format-info">Formato: PDF • Abre em qualquer dispositivo</p>
         </div>
         
-        <!-- Material 3 (Excel) -->
         <div class="material-card">
-            <h3><span class="icon">📊</span> 3. Exercícios e Atividades</h3>
-            <p>Planilha com exercícios práticos e questões para discussão.</p>
+            <h3><span class="icon">📘</span> 3. Guia Pedagógico para Professores</h3>
+            <p>Orientações didáticas, sugestões de aula e atividades.</p>
             <div>
-                <a href="exercicios.pdf" class="btn" target="_blank">Visualizar PDF</a>
-                <a href="exercicios.xlsx" class="btn btn-secondary" download>Baixar Excel</a>
+                <a href="guia_pedagogico_escola_frankfurt.pdf" class="btn" target="_blank">Abrir PDF</a>
+                <a href="guia_pedagogico_escola_frankfurt.pdf" class="btn btn-download" download>Download</a>
+                <a href="guia_pedagogico_escola_frankfurt.docx" class="btn btn-secondary" download>Versão Word</a>
             </div>
-            <p class="format-info">• PDF para visualização • Excel original para edição</p>
+            <p class="format-info">• PDF para visualização • Word para edição</p>
         </div>
         
         <div class="note">
-            💡 <strong>Dica:</strong> Salve esta página nos favoritos do seu celular para acesso rápido.
+            💡 <strong>Dica para alunos:</strong> Salve esta página nos favoritos do celular. Os PDFs podem ser baixados para leitura offline.
         </div>
         
         <footer>
             <p>Disponibilizado pelo professor • Atualizado em <span id="current-date"></span></p>
-            <p style="margin-top: 5px; font-size: 0.8em;">Acesse de qualquer dispositivo com internet</p>
+            <p style="margin-top: 5px; font-size: 0.8em;">Acessível em qualquer dispositivo com internet</p>
         </footer>
     </div>
 
     <script>
-        // Adiciona data atual
+        // Data atual
         const now = new Date();
-        const options = { day: '2-digit', month: 'long', year: 'numeric' };
         document.getElementById('current-date').textContent = 
-            now.toLocaleDateString('pt-BR', options);
-        
-        // Detectar dispositivo móvel
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            document.querySelector('.subtitle').innerHTML += '<br><span style="color:#27ae60;">✓ Modo celular ativo</span>';
-        }
+            now.toLocaleDateString('pt-BR');
     </script>
 </body>
 </html>
